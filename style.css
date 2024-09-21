@@ -10,11 +10,21 @@ body {
     flex: auto;
 }
 
+.center {
+    padding: 0 150px;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
 .header, .footer {
     padding: 0 150px;
     flex-basis: 60px;
     align-items: center;
     text-align: center;
+    display: flex;
 }
 
 .header, .footer, .one {
@@ -22,12 +32,10 @@ body {
 }
 
 .header {
-    display: flex;
-    gap: 15px;
+    gap: 40px;
 }
 
 .footer {
-    display: flex;
     justify-content: center;
 }
 
@@ -37,15 +45,49 @@ body {
     font-size: 24px;
 }
 
-.h-item, .footer {
+.h-item, .subtext, .footer {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+button {
+    color: #E5E7EB;
+    background: #3882F6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
 }
 
 .three {
     background-color: #E5E7EB;
 }
 
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.one-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .center {
     flex-grow: 5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
