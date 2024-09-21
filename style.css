@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -12,13 +15,10 @@ body {
 
 .center {
     padding: 0 150px;
+    flex-grow: 5;
 }
 
-img {
-    height: 200px;
-    width: auto;
-}
-
+/* #region Header-Footer */
 .header, .footer {
     padding: 0 150px;
     flex-basis: 60px;
@@ -45,9 +45,28 @@ img {
     font-size: 24px;
 }
 
+.h-img {
+    height: auto;
+    width: 350px;
+}
+
 .h-item, .subtext, .footer {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.one-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .title {
@@ -64,27 +83,44 @@ button {
     padding: 5px 20px;
     font-weight: bold;
 }
+/* #endregion */
+
+/* #region ContentTwo */
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.images > div {
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.emoji {
+    width: 120px;
+    height: auto;
+}
+
+.heading{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+/* #endregion */
 
 .three {
     background-color: #E5E7EB;
-}
-
-.one {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-
-.one-item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.center {
-    flex-grow: 5;
 }
 
 a {
